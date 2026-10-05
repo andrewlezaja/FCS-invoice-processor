@@ -2,7 +2,7 @@
 
 **A vision-LLM pipeline that turns messy maintenance invoices (scanned paper, phone photos, multi-invoice PDFs, handwriting) into structured, human-reviewed work orders in a CMMS.**
 
-> **Case study.** This was built during my AI Engineer internship at Francis Cable Systems, a manufacturing company, and runs in production there. The original code is proprietary, so this repo documents the problem, architecture, and design decisions. A public reimplementation with synthetic invoices and a mock CMMS API is in progress.
+> **Case study.** This was built during my AI Engineer internship at Francis Cable Systems, a manufacturing company, and runs in production there. The original code is proprietary, so this repo documents the problem, architecture, and design decisions.
 
 ---
 
