@@ -2,7 +2,7 @@
 
 **A vision-LLM pipeline that turns messy maintenance invoices (scanned paper, phone photos, multi-invoice PDFs, handwriting) into structured, human-reviewed work orders in a CMMS.**
 
-> **Case study.** This was built during my AI Engineer internship at a manufacturing company and runs in production there. The original code is proprietary, so this repo documents the problem, architecture, and design decisions. A public reimplementation with synthetic invoices and a mock CMMS API is in progress.
+> **Case study.** This was built during my AI Engineer internship at Francis Cable Systems, a manufacturing company, and runs in production there. The original code is proprietary, so this repo documents the problem, architecture, and design decisions. A public reimplementation with synthetic invoices and a mock CMMS API is in progress.
 
 ---
 
@@ -71,15 +71,3 @@ Python · Anthropic API (vision, structured outputs, streaming) · IMAP/SMTP · 
 - Replaced manual retyping of maintenance invoices with a review-and-approve workflow.
 - Handles handwritten invoices, phone photos, multi-invoice scans, and handwritten service binders.
 - Deployed on a Windows floor computer with an auto-restarting launcher, running unattended.
-
-<!-- TODO: add measured numbers if you have them, e.g. invoices processed, review time per invoice, % of rows approved without edits. -->
-
-## What I'd do next
-
-- **Measure extraction accuracy** against a labeled set (field-level accuracy, split by printed vs. handwritten).
-- **Confidence scores per field** so reviewers can focus on the uncertain ones.
-- **Move dedup state off the machine** (e.g., into the sheet or a small hosted DB) so the monitor isn't tied to one computer.
-
-## Screenshots
-
-<!-- TODO: add redacted screenshots: a sample (synthetic) invoice, the review sheet, and a created work order. -->
